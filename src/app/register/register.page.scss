@@ -1,0 +1,46 @@
+.bouton{
+    padding: 13px;
+    background-color: rgb(204, 70, 70);
+    border-radius: 3px;
+    font-weight: bold;
+    width: 160px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.form{
+    border: 1px solid lightgray;
+    box-shadow: 3px 1px 3px black;
+    padding: 10px;
+}
+.boutonFbk{
+    background-color: rgb(17, 88, 182);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
+    width: 200px;
+}
+.boutonGoo{
+    background-color: rgb(189, 58, 49);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
+    width: 200px;
+}
+.boutons{
+    text-align: center;
+    display: block;
+}
+.copyright{
+    text-align: center;
+}
+hr{
+    width: 50%;
+    color: black;
+    background-color: black;
+    margin-top: 12px;
+}

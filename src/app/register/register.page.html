@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Inscrivez-vous</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h3 style="text-align: center;">Formulaire d'inscription</h3>
+    <p style="text-align: center;">Remplissez les champs ci-dessous pour valider votre inscription</p>
+    <p><span style="color:red;">*</span>: signifie que le champ est obligatoire</p>
+    <div class="form">
+        <form (ngSubmit)="logForm()">
+            <ion-item>
+              <ion-label>Nom<span style="color:red;">*</span></ion-label>
+              <ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Prenoms<span style="color:red;">*</span></ion-label>
+              <ion-input type="text" [(ngModel)]="user.prenoms" name="prenoms"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Age</ion-label>
+                <ion-input type="date" [(ngModel)]="user.age" name="age"></ion-input>
+            </ion-item>
+            <ion-item>
+                  <ion-label>Email<span style="color:red;">*</span></ion-label>
+                  <ion-input type="email" [(ngModel)]="user.email" name="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Mot de passe<span style="color:red;">*</span></ion-label>
+                <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+            </ion-item>
+                <button ion-button type="submit" class="bouton">S'inscrire</button>
+        </form>
+        <hr>
+        <p style="text-align:center;">OU</p>
+        <div class="boutons">
+            <button class="boutonFbk"><ion-icon name="logo-facebook"></ion-icon> Inscrivez-vous via Facebook</button>
+            <button class="boutonGoo"><ion-icon name="logo-google"></ion-icon> Inscrivez-vous via Google</button>
+        </div>
+        
+    </div>
+    <br>
+    <p class="copyright">&copy; Copyright AWF 2018 - By Genesis NaN</p>
+      
+</ion-content>

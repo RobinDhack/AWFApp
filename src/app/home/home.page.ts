@@ -22,4 +22,8 @@ export class HomePage {
   allerVersForm(){
     this.router.navigate(['/mobileConcours'])
   }
+
+  loginPage(lien){
+    this.router.navigateByUrl(lien)
+  }
 }
