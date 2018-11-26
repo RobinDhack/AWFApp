@@ -1,0 +1,40 @@
+<ion-tabs>
+
+  <ion-tab tab="home">
+    <ion-router-outlet name="home"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="news">
+    <ion-router-outlet name="news"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="contact">
+    <ion-router-outlet name="contact"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="tips">
+    <ion-router-outlet name="tips"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button tab="home" href="/tabs/(home:home)">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Accueil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about" href="/tabs/(news:news)">
+      <ion-icon name="paper"></ion-icon>
+      <ion-label>Actualité</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="contact" href="/tabs/(contact:contact)">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Contact</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tips" href="/tabs/(tips:tips)">
+      <ion-icon name=""></ion-icon>
+      <ion-label>Tips</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

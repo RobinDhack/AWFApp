@@ -1,0 +1,129 @@
+<ion-header color="primary">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">AWF ACCUEIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="entete">
+    <h1>AWF A 5 ANS !</h1>
+    <p>
+      RENDEZ-VOUS A NE PAS MANQUER! <br>
+      29, 30 NOVEMBRE &amp; 1er DECEMBRE 2018 <br>
+      AU PALAIS DE LA CULTURE DE TREICHVILLE
+    </p>
+
+    <p>mettre de l'avant les africains qui sur leurs continent développent des solutions innovantes et / ou technologiques qui contribuent à pérenniser la paix dans leurs différents milieux.</p>
+
+    <button class="bouton" (click)="versFesti()" style="margin-right:10px;">LIRE LA SUITE</button>
+    <button class="bouton" (click)="versFesti()">CONNECTEZ-VOUS</button>
+  </div>
+  <div class="enjeu">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" class="colonne">
+          <p>INNOVATION</p>
+        </ion-col>
+        <ion-col size="4" class="colonne">
+          <p>CRÉATIVITÉ</p>
+        </ion-col>
+        <ion-col size="4" class="colonne">
+          <p>ENTREPRENEURIAT</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="actu">
+    <p>Retrouvez toute l'actualité de l'Africa Web Festival en cliquant sur le bouton ci-dessous</p>
+    <button class="bouton" (click)="versActu()">ACTUALITE</button>
+  </div>
+  <div class="visuels">
+    <h3>AWF CONCOURS</h3>
+    <img src="../../assets/icon/visuel1.PNG" alt="image" class="img_visuel">
+    <button ion-button style="margin-bottom:5px;" (click)="allerVersForm()">Inscrivez-vous ici</button>
+    <br>
+    <h3>AWF APPEL A START-UPS</h3>
+    <img src="../../assets/icon/visuel2.PNG" alt="" class="img_visuel">
+    <button ion-button>Inscrivez-vous ici</button>
+  </div>
+  <div class="speakers">
+    <p>Découvrez quelques visages de nos chers panélistes pour AWF2018</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+            <ion-card class="coll">
+                <img src="../../assets/icon/Aboukam-copie-360x360.jpg" height="100" width="100"/>
+                <ion-card-content>
+                  <ion-card-title class="nom">
+                    ABOU <br> KAMAGATE
+                    </ion-card-title>
+                    <h3>Consultant Stratégie Web</h3>
+                  
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card class="coll">
+                <img src="../../assets/icon/Pascal.jpg" height="100" width="100"/>
+                <ion-card-content>
+                  <ion-card-title class="nom">
+                    PASCAL BEAUCHESNE
+                    </ion-card-title>
+
+                    <h3>Associé - Arche Innovation</h3>
+                  
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+            <ion-card  class="coll">
+                <img src="../../assets/icon/Photo_FranceLamarre_blanc_noire-360x360.jpg" height="100" width="100"/>
+                <ion-card-content>
+                  <ion-card-title class="nom">
+                      FRANCE LAMARRE
+                    </ion-card-title>
+
+                    <h3>Designer graphique de formation</h3>
+                  
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card class="coll">
+                <img src="../../assets/icon/Mehdi-CHAHI-1.png" height="100" width="100"/>
+                <ion-card-content>
+                  <ion-card-title class="nom">
+                    MEHDI CHAHI
+                    </ion-card-title>
+
+                    <h3>Marketing Research Consultant &amp; Digital Strategist</h3>
+                  
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>Découvrez dans une autre page dediée tous les autres intervenants de l'AWF2018</p>
+    <button ion-button (click)="versSpeaker()">LES INTERVENANTS</button>
+  </div>
+  <div class="footer">
+          <img src="../../assets/icon/logo.png" alt="image_logo" class="img_logo"/>
+          <p class="boxed-text center-text">
+            Chaque jours qui passe, nous reflechissons pour vous simplifier la vie !
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/enabled.labs/" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+            <a href="https://plus.google.com/u/2/105775801838187143320" class="google-bg"><i class="fa fa-google-plus"></i></a>
+            <a href="https://twitter.com/iEnabled" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+            <a href="tel:+1-234-567-8901" class="phone-bg"><i class="fa fa-phone"></i></a>
+            <a href="mailto:name@domain.com" class="mail-bg"><i class="fa fa-envelope"></i></a>
+            <div class="clear"></div>
+          </div>
+          <div class="decoration decoration-margins"></div>
+          <br>
+          <p class="center-text">&copy; All rights reserved 2018 AWF.</p>
+          <p class="center-text">Designed by Genesis NaN.</p>
+  </div>
+</ion-content>

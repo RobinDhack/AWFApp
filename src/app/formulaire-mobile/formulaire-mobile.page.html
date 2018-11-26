@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center">Formulaire d'inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Formulaire d'inscription</h3>
+  <p>Remplissez les champs ci-dessous pour valider votre inscription</p>
+  <p><span style="color:red;">*</span>: signifie que le champ est obligatoire</p>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+          <ion-label>Nom<span style="color:red;">*</span></ion-label>
+          <ion-input type="text" [(ngModel)]="user.nom" name="nom"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Prenoms<span style="color:red;">*</span></ion-label>
+          <ion-input type="text" [(ngModel)]="user.prenoms" name="prenoms"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Age</ion-label>
+            <ion-input type="number" [(ngModel)]="user.age" name="age"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Sexe</ion-label>
+              <ion-input type="text" [(ngModel)]="user.sexe" name="sexe"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Email<span style="color:red;">*</span></ion-label>
+              <ion-input type="email" [(ngModel)]="user.email" name="email"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Téléphone<span style="color:red;">*</span></ion-label>
+              <ion-input type="number" [(ngModel)]="user.telephone" name="telephone"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Votre video<span style="color:red;">*</span></ion-label>
+              <ion-input type="file" [(ngModel)]="user.video" name="video"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>URL facebook<span style="color:red;">*</span></ion-label>
+              <ion-input type="text" [(ngModel)]="user.urlFacebook" name="url"></ion-input>
+          </ion-item>
+            <button ion-button type="submit" class="bouton">S'inscrire</button>
+    </form>
+</ion-content>

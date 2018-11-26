@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center;">speakers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/icon/speakers.jpg" height="200" alt="banniere" style="width:100%;">
+  <h1 style="text-align:center;font-weight:bold;">Les intervenants à l'AWF2018</h1>
+
+  <ion-grid *ngFor="let speaker of speakers">
+    <ion-row>
+      <ion-col size="12">
+          <ion-card>
+              <img src="{{speaker.image}}"/>
+              <ion-card-content>
+                <ion-card-title class="nom">
+                  {{speaker.name}}
+                </ion-card-title>
+                <h2>{{speaker.poste}}</h2>
+                <p>{{speaker.description}}</p>
+              </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="footer">
+      <img src="../../assets/icon/logo.png" width="150" height="100" class="img_logo" alt="logo">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3" class="rs">
+            <img src="../../assets/icon/icons8-facebook-48.png" alt="facebook">
+          </ion-col>
+          <ion-col size="3" class="rs">
+            <img src="../../assets/icon/icons8-twitter-48.png" alt="twitter">
+          </ion-col>
+          <ion-col size="3" class="rs">
+            <img src="../../assets/icon/icons8-instagram-40.png" alt="instagram">
+          </ion-col>
+          <ion-col  size="3" class="rs">
+            <img src="../../assets/icon/icons8-linkedin-48.png" alt="linkedin">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <p>Copyright © 2018. Développé par: Genesis NaN</p>
+    </div>
+</ion-content>

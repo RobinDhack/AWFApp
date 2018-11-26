@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center;">AWF-TIPS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="module">
+      <h1>AWF TIPS</h1>
+      <p class="note">La rubrique AWF-TIPS a été mise en place dans le but de vous permettre d'avoir des cours rangé par module que vous pourrez télécharger en format pdf.</p>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+              <ion-card>
+                  <img src="../../assets/icon/web.jpg"/>
+                  <ion-card-content>
+                    <ion-card-title>
+                      Développement mobile
+                      </ion-card-title>
+                    <p>
+                      Ce module vous offre des documents vous aidant à approfondir et parfaire vos connaissance en developpement mobile.
+                    </p>
+                    <button ion-button class="bouton" (click)="navigateTo('/webCourse')">Parcourir</button>
+                  </ion-card-content>
+                </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+              <ion-card>
+                  <img src="../../assets/icon/medias.jpg"/>
+                  <ion-card-content>
+                    <ion-card-title>
+                      Communication digitale
+                      </ion-card-title>
+                    <p>
+                      Ce module met à votre disposition une diversité de cours sur la communication digitale.
+                    </p>
+                    <button ion-button class="bouton" (click)="navigateTo('/comCourse')">Parcourir</button>
+                  </ion-card-content>
+                </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+
+</ion-content>
