@@ -6,7 +6,8 @@ import { HomePage } from '../home/home.page';
 import { ContactPage } from '../contact/contact.page';
 import { TipsPage } from '../tips/tips.page';
 import { NewsPage } from '../news/news.page';
-
+import { ProgrammePage} from '../programme/programme.page';
+import { GamePage } from '../game/game.page';
 
 const routes: Routes = [
   {
@@ -37,6 +38,16 @@ const routes: Routes = [
         path:'tips',
         outlet: 'tips',
         component: TipsPage
+      },
+      {
+        path: 'programme',
+        outlet: 'programme',
+        component: ProgrammePage
+      },
+      {
+        path: 'game',
+        outlet:'game',
+        component: GamePage
       }
       
     ]

@@ -1,17 +1,16 @@
-//nos imports
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
 
-//nos pages
-import { LoginPage } from './login.page';
+import { ProgrammePage } from './programme.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: ProgrammePage
   }
 ];
 
@@ -22,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [LoginPage]
+  declarations: [ProgrammePage]
 })
-export class LoginPageModule {}
+export class ProgrammePageModule {}

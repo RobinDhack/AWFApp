@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path:'', loadChildren:'./login/login.module#LoginPageModule'},
-  // { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  // { path:'', loadChildren:'./login/login.module#LoginPageModule'},
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
   { path: 'news-single', loadChildren: './news-single/news-single.module#NewsSinglePageModule' },
@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'webCourse', loadChildren: './web-course/web-course.module#WebCoursePageModule' },
   { path: 'comCourse', loadChildren: './com-course/com-course.module#ComCoursePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },  { path: 'programme', loadChildren: './programme/programme.module#ProgrammePageModule' },
+  { path: 'game', loadChildren: './game/game.module#GamePageModule' }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

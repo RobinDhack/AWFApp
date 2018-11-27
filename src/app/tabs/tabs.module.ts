@@ -12,6 +12,8 @@ import { AboutPageModule } from '../about/about.module';
 import { HomePageModule } from '../home/home.module';
 import { NewsPageModule } from '../news/news.module';
 import { TipsPageModule } from '../tips/tips.module';
+import { ProgrammePageModule } from '../programme/programme.module';
+import { GamePageModule } from '../game/game.module';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { TipsPageModule } from '../tips/tips.module';
     AboutPageModule,
     ContactPageModule,
     NewsPageModule,
-    TipsPageModule
+    TipsPageModule,
+    ProgrammePageModule,
+    GamePageModule
   ],
   declarations: [TabsPage]
 })
