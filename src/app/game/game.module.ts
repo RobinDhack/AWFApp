@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { GamePage } from './game.page';
-import { HTTP } from '@ionic-native/http/ngx';
+import { RestService } from '../rest.service';
 
 const routes: Routes = [
   {
@@ -21,6 +21,9 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
+  ],
+  providers: [
+    RestService
   ],
   declarations: [GamePage]
 })
