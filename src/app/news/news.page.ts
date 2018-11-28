@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsService } from '../news.service';
 import { Router } from '@angular/router';
-import { RestService } from '../rest.service';
 
 
 @Component({
@@ -12,13 +10,11 @@ import { RestService } from '../rest.service';
 export class NewsPage implements OnInit {
 
   data: any;
-  actualites: any;
+  // actualites: any;
   lastUpdate = new Date()
-  constructor(private newsService: NewsService,
-              private router: Router,
-              public rest: RestService) { 
-                // this.actus();
-              }
+  constructor(private router: Router,) { 
+    // this.actus();
+  }
 
   
 

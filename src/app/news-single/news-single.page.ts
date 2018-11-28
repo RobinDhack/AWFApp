@@ -17,19 +17,19 @@ export class NewsSinglePage implements OnInit {
   constructor(private newsService: NewsService,
               private http: HttpClient,
               public rest: RestService) { 
-                this.actus();
+                // this.actus();
               }
 
   ngOnInit() {
     this.article = this.newsService.currentArticle;
     console.log(this.newsService.currentArticle);
   }
-  actus(){
-    this.rest.getActu()
-    .then(data => {
-      this.actualites = data;
-      console.log(this.actualites);
-    });
-  }
+  // actus(){
+  //   this.rest.getActu()
+  //   .then(data => {
+  //     this.actualites = data;
+  //     console.log(this.actualites);
+  //   });
+  // }
   
   }
