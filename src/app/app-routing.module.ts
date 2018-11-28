@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'comCourse', loadChildren: './com-course/com-course.module#ComCoursePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },  { path: 'programme', loadChildren: './programme/programme.module#ProgrammePageModule' },
-  { path: 'game', loadChildren: './game/game.module#GamePageModule' }
+  { path: 'game', loadChildren: './game/game.module#GamePageModule' },
+  { path: 'none', loadChildren: './none/none.module#NonePageModule' }
 
 ];
 @NgModule({

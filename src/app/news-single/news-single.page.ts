@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from '../news.service';
 import { HttpClient } from '@angular/common/http';
+import { RestService } from '../rest.service';
 
 
 @Component({
@@ -12,29 +13,23 @@ export class NewsSinglePage implements OnInit {
 
   article;
   lastupdate = new Date();
-  apiUrl = 'http://localhost/angular/insert.php';
-  
-    data=
-      {
-      name:'',
-      comments:''
-      }
-  
+  actualites: any;
   constructor(private newsService: NewsService,
-              private http: HttpClient) { }
+              private http: HttpClient,
+              public rest: RestService) { 
+                this.actus();
+              }
 
   ngOnInit() {
     this.article = this.newsService.currentArticle;
     console.log(this.newsService.currentArticle);
   }
-  
-  logForm(){
-    let formdata = new FormData();
-    formdata.append('name', this.data.name);
-    formdata.append('comments', this.data.comments);
-    this.http.post(this.apiUrl, formdata)
-    .subscribe(data=>{
-      console.log(data);
+  actus(){
+    this.rest.getActu()
+    .then(data => {
+      this.actualites = data;
+      console.log(this.actualites);
     });
   }
+  
   }

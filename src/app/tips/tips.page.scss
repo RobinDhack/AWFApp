@@ -1,5 +1,5 @@
 .module{
-
+    padding: 16px;
     h1{text-align: center;
     font-weight: bold;
     }
@@ -15,4 +15,10 @@
         font-size: 10px;
         
     }
+}
+.footer{
+    padding: 16px;
+    background-color: rgb(56, 56, 56);
+    color: rgb(206, 203, 203);
+    text-align:center;
 }

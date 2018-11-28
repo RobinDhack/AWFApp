@@ -1,8 +1,8 @@
 {
-  "name": "myApp",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "awf2018",
+  "version": "1.0.0",
+  "author": "Genesis NaN",
+  "homepage": "https://africawebfestival.com",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RestService } from './rest.service';
+import { AuthService } from './auth.service';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RestService } from './rest.service';
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [
+    AuthService,
     RestService,
     StatusBar,
     SplashScreen,

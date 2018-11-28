@@ -4,8 +4,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Formulaire d'inscription</h3>
+<ion-content>
+<div style="padding:16px;">
+    <h3>Formulaire d'inscription</h3>
   <p>Remplissez les champs ci-dessous pour valider votre inscription</p>
   <p><span style="color:red;">*</span>: signifie que le champ est obligatoire</p>
     <form (ngSubmit)="logForm()">
@@ -43,4 +44,10 @@
           </ion-item>
             <button ion-button type="submit" class="bouton">S'inscrire</button>
     </form>
+</div>
+  
+    <div class="footer">
+        Copyright © AWF2018. Développé par: Genesis NaN
+    </div>
+
 </ion-content>
