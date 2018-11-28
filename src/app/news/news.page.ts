@@ -17,7 +17,7 @@ export class NewsPage implements OnInit {
   constructor(private newsService: NewsService,
               private router: Router,
               public rest: RestService) { 
-                this.actus();
+                // this.actus();
               }
 
   
@@ -28,18 +28,21 @@ export class NewsPage implements OnInit {
     //   this.data = data;
     // });
   }
-  goTo(article){
-    this.newsService.currentArticle = article;
-    this.router.navigate(['/news-single']);
+  goto(lien){
+    this.router.navigateByUrl(lien);
   }
+  // goTo(article){
+  //   this.newsService.currentArticle = article;
+  //   this.router.navigate(['/news-single']);
+  // }
 
-  actus(){
-    this.rest.getActu()
-    .then(data => {
-      this.actualites = data;
-      console.log(this.actualites);
-    });
-  }
+  // actus(){
+  //   this.rest.getActu()
+  //   .then(data => {
+  //     this.actualites = data;
+  //     console.log(this.actualites);
+  //   });
+  // }
 
 
 }

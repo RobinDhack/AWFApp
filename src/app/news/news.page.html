@@ -6,16 +6,39 @@
 
 <ion-content>
   <div style="padding:16px;">
-      <ion-card *ngFor="let article of actualites" (click)="goTo(article)">
+    <ion-card (click)="goto('/article1')">
     <ion-card-header>
-      <ion-img src="../../assets/icon/{{article.image}}"></ion-img>
-      <h2>{{article.titre}}</h2>
-      <ion-card-title>{{ article.preview }}</ion-card-title>
+      <ion-img src="../../assets/icon/a1.jpg"></ion-img>
+      <ion-card-title>AFRICA WEB FESTIVAL: 29 – 30 NOVEMBRE, 1ER DÉCEMBRE 2018 ABIDJAN</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
-      <p>{{ article.description }}</p>
-      <ion-item><ion-icon name="text"></ion-icon> {{ lastUpdate | date }}</ion-item>
+      <p>Africa Web Festival a 5 ans !!! Rendez-vous de promotion et d’émulation du numérique en Afrique francophone, Africa Web Festival (#AWF2018) est un événement gratuit et ouvert à tous.           Il réunit pendant 3 jours, professionnels, passionnés du numérique et entrepreneurs autour de diverses activités (conférences, panels, ateliers, jeux, concours, recrutements et rencontre BtoB). </p>
+      <ion-item (click)="goto('/article1')"><ion-icon name="eye"></ion-icon> voir plus</ion-item>
+    </ion-card-content> 
+  </ion-card>
+
+  <ion-card (click)="goto('/article2')">
+    <ion-card-header>
+      <ion-img src="../../assets/icon/a2.png"></ion-img>
+      <ion-card-title>AFRICA WEB FESTIVAL 2018</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>L’Africa Web Festival 2018 aura pour thème « Consolider la paix en Afrique par l’Innovation et l’Entrepreneuriat » Évènement tournant dans les pays d’Afrique francophone, l’Africa Web Festival est promu par l’organisation à but non lucratif (OBNL) « MANDINGO AGIR POUR DEMAIN » et se déroulera cette année à Abidjan les 29, 30 Nov. et 1er Déc. 2018. </p>
+      <ion-item (click)="goto('/article2')"><ion-icon name="eye"></ion-icon> Voir plus</ion-item>
+    </ion-card-content> 
+  </ion-card>
+
+  <ion-card (click)="goto('/article3')">
+    <ion-card-header>
+      <ion-img src="../../assets/icon/a3.jpg"></ion-img>
+      <ion-card-title>AGENDA ABIDJAN, DU 29/11 AU 01/12 – VE AFRICA WEB FESTIVAL, OU L’INNOVATION ENTREPRENEURIALE AU SERVICE DE LA PAIX</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Avec plus de 7000 participants chaque année, Africa Web Festival est le plus important rendez-vous de promotion et d’émulation du numérique en Afrique francophone. Relever le défi de la « consolidation de la paix par l’innovation et l’entrepreneuriat » sera le fil conducteur de cette Veédition de AWF</p>
+      <ion-item (click)="goto('/article3')"><ion-icon name="eye"></ion-icon> Voir plus</ion-item>
     </ion-card-content> 
   </ion-card>
   </div>

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RestService {
 
-  apiUrl = 'http://localhost:3000';
+  apiUrl = 'http://nan-oracle.yn.fr/node:3000';
   constructor(private http: HttpClient) { 
     console.log("le service a fonctionné");
   }
